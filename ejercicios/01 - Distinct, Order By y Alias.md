@@ -5,14 +5,14 @@
 <details>
     <summary>Salida</summary>
 
-    | nombre             | dinero    |
-    | :---:              | :---:     |
-    | abrilchauq         | 50000     |
-    | Liono02            | 10000     |
-    | LucasMedina04      | 10000     |
-    | luchoxx87          | 10000     |
-    | magalirodriguez09  | 15000     |
-    | recalDER           | 10000     |
+| nombre             | dinero    |
+| :---:              | :---:     |
+| abrilchauq         | 50000     |
+| Liono02            | 10000     |
+| LucasMedina04      | 10000     |
+| luchoxx87          | 10000     |
+| magalirodriguez09  | 15000     |
+| recalDER           | 10000     |
     
 </details>
 
