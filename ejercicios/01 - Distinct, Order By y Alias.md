@@ -2,14 +2,19 @@
 
 1) Mostrar nombre y dinero de los entrenadores. Ordenar por nombre de menor a mayor.
 
-| nombre             | dinero    |
-| :---:              | :---:     |
-| abrilchauq         | 50000     |
-| Liono02            | 10000     |
-| LucasMedina04      | 10000     |
-| luchoxx87          | 10000     |
-| magalirodriguez09  | 15000     |
-| recalDER           | 10000     |
+<details>
+    <summary>Salida</summary>
+
+    | nombre             | dinero    |
+    | :---:              | :---:     |
+    | abrilchauq         | 50000     |
+    | Liono02            | 10000     |
+    | LucasMedina04      | 10000     |
+    | luchoxx87          | 10000     |
+    | magalirodriguez09  | 15000     |
+    | recalDER           | 10000     |
+    
+</details>
 
 2) Mostrar todos los atributos de la entidad Objeto. Ordenar por venta de mayor a menor.
 
