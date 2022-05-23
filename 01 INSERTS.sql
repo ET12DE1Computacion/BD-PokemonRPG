@@ -20,7 +20,7 @@ START TRANSACTION;
                     (2, 'Agua'),
                     (3, 'Bicho'),
                     (4, 'Dragón'),
-                    (5, 'Electrico'),
+                    (5, 'Eléctrico'),
                     (6, 'Fantasma'),
                     (7, 'Fuego'),
                     (8, 'Hada'),
