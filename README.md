@@ -36,7 +36,7 @@ git clone https://github.com/ET12DE1Computacion/BD-PokemonRPG
 
 ## Guia de ejercicios
 
-[Ejercicios de Bases de Datos 4º](ejercicios\04%20BD\README.md)
+[Ejercicios de Bases de Datos 4º](ejercicios/04%20BD/README.md)
 
 ## Colaboradores
 
