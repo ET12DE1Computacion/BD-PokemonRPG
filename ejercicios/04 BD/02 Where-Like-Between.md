@@ -60,3 +60,5 @@
 </details>
 
 5) Mostrar `nombre`, `precioVenta` y `precioCompra` de los objetos que termien con la palabra `'ball'` o empiecen con la palabra `'Piedra'`, siempre y cuando su `precioCompra` se encuentre entre 500 y 2000 (topes incluidos). Ordenar por `nombre` ascendente y los encabezados de las columnas tienen que tener espacio si lo requiere.
+
+[<< VOLVER](../04%20BD/README.md)
