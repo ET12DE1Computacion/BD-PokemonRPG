@@ -33,7 +33,7 @@ Consejo: para el primer ordenamiento pueden:
 **4 filas**
 </details>
 
-3) Mostrar cuántos pokemons hay con idEspecie igual a 3.
+3) Mostrar cuántos pokemons hay con `idEspecie` igual a `3`.
 
 <details>
     <summary>Salida</summary>
@@ -48,8 +48,8 @@ Consejo: para el primer ordenamiento pueden:
 **5 filas**
 </details>
 
-4) Mostrar el promedio de nivel de los pokemons con idEntrenador igual a 1.
+4) Mostrar el promedio de `nivel` de los pokemons con `idEntrenador` igual a `1`.
 
-5) Mostrar el promedio de peso y altura (info. en tabla Especie) de los pokemons con idEntrenador igual a 1 o 3 (info. en la tabla Pokemon).
+5) Mostrar el promedio de `peso` y `altura` (info. en tabla Especie) de los pokemons con idEntrenador igual a 1 o 3 (info. en la tabla Pokemon).
 
 [<< VOLVER](../04%20BD/README.md)
