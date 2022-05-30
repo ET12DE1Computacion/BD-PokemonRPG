@@ -370,12 +370,22 @@ START TRANSACTION;
 
     SELECT 'INSERTS en Objeto' AS 'INSERT';
     INSERT INTO Objeto  (idObjeto, nombre, precioCompra, precioVenta)
-                VALUES  (1  , 'Poké Ball'   , 200   , 100);
+                VALUES  (1  , 'Poké Ball'   , 200   , 100),
+                        (2  , 'Super Ball'  , 600   , 300),
+                        (3  , 'Piedra agua' , 2100  , 1500),
+                        (4  , 'Piedra fuego', 2100  , 1500),
+                        (5  , 'Piedra trueno', 2100  , 1500);
 
     SELECT 'INSERTS Mochila' AS 'INSERT';
     INSERT INTO Mochila (idEntrenador, idObjeto, cantidad)
                 VALUES  (1  , 1     , 5),
+                        (1  , 3     , 1),
                         (2  , 1     , 3),
-                        (3  , 1     , 6);
+                        (2  , 4     , 1),
+                        (3  , 5     , 1),
+                        (3  , 1     , 6),
+                        (4  , 2     , 15),
+                        (5  , 1     , 20),
+                        (5  , 2     , 20);
 
 COMMIT;

@@ -1,13 +1,55 @@
 # TP Pokemon - Funciones de Fila y Grupo
 
-1) Mostrar `nombre`  de la especie y pokemons capturados (JOIN con Pokemon) de la misma si la cantidad es mayor o igual a `2`. Ordenar por cantidad de mayor a menor.
+1) Mostrar todos los `apodos` de los pokemons `atrapados` durante el mes de septiembre del 2021. Ordenar por `apodo` de menor a mayor.
 
-2) Mostrar `nombre`  de los entrenadores y cantidad de pokemons atrapados por el entrenador (JOIN por `Pokemon.idEntrenadorOriginal`) si el `dinero` que poseen estos entrenadores es superior a `500`.
+<details>
+    <summary>Salida</summary>
 
-3) Mostrar el `nombre`  de los objetos junto con la suma de las `cantidades` que se encuentran en las mochilas. Si un entrenador tiene 3 unidades de un objeto y otro 2 unidades de ese mismo objeto, la suma de las cantidades para este objeto es 5. Ordenar por suma de cantidades de mayor a menor.
+| nombre   | cantidad|
+| :---:    | :---:   |
+| Venusaur |3        |
+| Zapdos   |2        |
+| Mewtwo   |2        |
+| Magneton |2        |
 
-4) Mostrar `nombre`  de los tipos (`Tipo.tipo`) junto con el promedio de pesos de las especies (join por `Especie.idTipo`) en las que se encuentra. Solo mostrar los `tipos` que tengan al menos 6 letras o tengan alguna `'F'` en su `nombre`  (`Tipo.tipo`). Ordenar por `tipo` de menor a mayor.
+**4 filas**
+</details>
 
-5) Mostrar `nombre`  del entrenador y la suma de los `precios de venta` de los objetos en su mochila (intervienen 3 tablas) si el `dinero` que posee el entrenador es mayor a `500` y la suma de dinero de sus objetos se encuentra entre `100` y `1000` (topes incluidos). Ordenar por suma de menor a mayor.
+2) Mostrar el `nombre` de todas las especies junto con la cantidad de letras del mismo, siempre y cuando esta cantidad se encuentre entre `5` y `10` letras (topes incluidos). Ordenar por cantidad de letras (mayor a menor) y luego por `nombre` (menor a mayor).
+Consejo: para el primer ordenamiento pueden:
+  - Copiar y pegar la expresión que hayan usado para la cantidad de letras
+  - Asignarle un alias a la expresión y usar ese mismo alias (con las comillas simples incluidas) en el `ORDER BY`.
+
+<details>
+    <summary>Salida</summary>
+
+| nombre        | cantidad|
+| :---:         | :---:   |
+| LucasMedina04 | 12      |
+| Liono02       | 6       |
+| abrilchauq    | 6       |
+| ...           | ...     |
+
+**4 filas**
+</details>
+
+3) Mostrar cuántos pokemons hay con idEspecie igual a 3.
+
+<details>
+    <summary>Salida</summary>
+
+| nombre        | cantidades|
+| :---:         | :---:     |
+| Super Ball    | 35        |
+| Poké Ball     | 34        |
+| Piedra agua   | 1         |
+| ...           | ...       |
+
+**5 filas**
+</details>
+
+4) Mostrar el promedio de nivel de los pokemons con idEntrenador igual a 1.
+
+5) Mostrar el promedio de peso y altura (info. en tabla Especie) de los pokemons con idEntrenador igual a 1 o 3 (info. en la tabla Pokemon).
 
 [<< VOLVER](../04%20BD/README.md)

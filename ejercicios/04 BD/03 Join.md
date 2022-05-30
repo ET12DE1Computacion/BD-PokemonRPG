@@ -15,16 +15,16 @@
 **36 filas**
 </details>
 
-2) Mostrar nombre de la especie, nivel y apodo de los pokemons del entrenador con `idEntrenador` igual a 1.
+2) Mostrar nombre de la especie, nivel y apodo de los pokemons del entrenador con `idEntrenador` igual a 1. Ordenar por `nombre` de especie de mayor a menor.
 
 <details>
     <summary>Salida</summary>
 
 | nombre    | nivel  | apodo    |
 | :---:     | :---:  | :---:    |
-| Venusaur  | 71     | _NULL_   |
 | Zapdos    | 81     | Chispita |
-| Parasect  | 100    | _NULL_   |
+| Venusaur  | 71     | _NULL_   |
+| Venonat   | 63     | _NULL_   |
 | ...       | ...    | ...      |
 
 **6 filas**
