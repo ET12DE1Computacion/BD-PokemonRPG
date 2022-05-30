@@ -47,6 +47,31 @@
 
 4) Mostrar `nombre`  de los tipos (`Tipo.tipo`) junto con el promedio de pesos de las especies (join por `Especie.idTipo`) en las que se encuentra. Solo mostrar los `tipos` que tengan al menos 6 letras o tengan alguna `'F'` en su `nombre`  (`Tipo.tipo`). Ordenar por `tipo` de menor a mayor.
 
-5) Mostrar `nombre`  del entrenador y la suma de los `precios de venta` de los objetos en su mochila (intervienen 3 tablas) si el `dinero` que posee el entrenador es mayor a `500` y la suma de dinero de sus objetos se encuentra entre `100` y `1000` (topes incluidos). Ordenar por suma de menor a mayor.
+<details>
+    <summary>Salida</summary>
+
+| tipo      | avg(peso) |
+| :---:     | :---:     |
+| Dragón    | 76.5999   |
+| Eléctrico | 28.5153   |
+| Fantasma  | 10.42     |
+| ...       | ...       |
+
+**5 filas**
+</details>
+
+5) Mostrar `nombre`  del entrenador y la suma de los `precios de venta` de los objetos en su mochila (la suma se calcula como la suma del producto de `mochila.cantidad * objeto.precioventa`) si el `dinero` que posee el entrenador es mayor a `5000` y la suma de dinero de sus objetos se encuentra entre `2000` y `3000` (topes incluidos). Ordenar por suma de menor a mayor.
+
+<details>
+    <summary>Salida</summary>
+
+| nombre            | suma    |
+| :---:             | :---:   |
+| LucasMedina04     | 2000    |
+| luchoxx87         | 2100    |
+| magalirodriguez09 | 3000    |
+
+**3 filas**
+</details>
 
 [<< VOLVER](../04%20BD/README.md)

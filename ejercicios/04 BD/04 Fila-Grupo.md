@@ -1,18 +1,18 @@
 # TP Pokemon - Funciones de Fila y Grupo
 
-1) Mostrar todos los `apodos` de los pokemons `atrapados` durante el mes de septiembre del 2021. Ordenar por `apodo` de menor a mayor.
+1) Mostrar todos los `apodos` de los pokemons `atrapados` durante el mes de septiembre del 2021. Ordenar por `apodo` de mayor a menor.
 
 <details>
     <summary>Salida</summary>
 
-| nombre   | cantidad|
-| :---:    | :---:   |
-| Venusaur |3        |
-| Zapdos   |2        |
-| Mewtwo   |2        |
-| Magneton |2        |
+| apodo      | atrapado      |
+| :---:      | :---:         |
+| Xavier     | 2021-09-24    |
+| Chispita   | 2021-09-24    |
+| Chikito    | 2021-09-24    |
+| ...        | ...           |
 
-**4 filas**
+**18 filas**
 </details>
 
 2) Mostrar el `nombre` de todas las especies junto con la cantidad de letras del mismo, siempre y cuando esta cantidad se encuentre entre `5` y `10` letras (topes incluidos). Ordenar por cantidad de letras (mayor a menor) y luego por `nombre` (menor a mayor).
@@ -23,14 +23,15 @@ Consejo: para el primer ordenamiento pueden:
 <details>
     <summary>Salida</summary>
 
-| nombre        | cantidad|
-| :---:         | :---:   |
-| LucasMedina04 | 12      |
-| Liono02       | 6       |
-| abrilchauq    | 6       |
-| ...           | ...     |
+| nombre     | letras |
+| :---:      | :---:  |
+| Aerodactyl | 10     |
+| Bellsprout | 10     |
+| Butterfree | 10     |
+| ...        | ...    |
 
-**4 filas**
+**222 filas**
+
 </details>
 
 3) Mostrar cuántos pokemons hay con `idEspecie` igual a `3`.
@@ -38,18 +39,35 @@ Consejo: para el primer ordenamiento pueden:
 <details>
     <summary>Salida</summary>
 
-| nombre        | cantidades|
-| :---:         | :---:     |
-| Super Ball    | 35        |
-| Poké Ball     | 34        |
-| Piedra agua   | 1         |
-| ...           | ...       |
+| COUNT(*) |
+| :---:    |
+| 3        |
 
-**5 filas**
+**1 fila**
 </details>
 
 4) Mostrar el promedio de `nivel` de los pokemons con `idEntrenador` igual a `1`.
 
+<details>
+    <summary>Salida</summary>
+
+| AVG(nivel) |
+| :---:      |
+| 70.1667    |
+
+**1 fila**
+</details>
+
 5) Mostrar el promedio de `peso` y `altura` (info. en tabla Especie) de los pokemons con idEntrenador igual a 1 o 3 (info. en la tabla Pokemon).
+
+<details>
+    <summary>Salida</summary>
+
+| AVG(peso ) | AVG(altura ) |
+| :---:      | :---:        |
+| 63.0083    | 1.65         |
+
+**1 fila**
+</details>
 
 [<< VOLVER](../04%20BD/README.md)
