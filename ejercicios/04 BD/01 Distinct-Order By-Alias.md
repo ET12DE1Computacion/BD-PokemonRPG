@@ -23,11 +23,14 @@
 <details>
     <summary>Salida</summary>
 
-| idObjeto  | nombre    | precioVenta | precioCompra |
-| :---:     | :---:     | :---:       | :---:        |
-| 1         | Poké Ball | 100         | 100          |
+| idObjeto  | nombre        | precioVenta | precioCompra |
+| :---:     | :---:         | :---:       | :---:        |
+| 3         | Piedra agua   | 1500        | 2100         |
+| 4         | Piedra fuego  | 1500        | 2100         |
+| 5         | Piedra trueno | 1500        | 2100         |
+| ...       | ...           | ...         | ...          |
 
-**1 fila**
+**5 filas**
 
 </details>
 
@@ -36,12 +39,12 @@
 <details>
     <summary>Salida</summary>
 
-| peso  | altura    |
-| :---: | :---:     |
-| 0.1   | 50000     |
-| 0.1   | 10000     |
-| 0.5   | 10000     |
-| ...   | ...       |
+| peso  | altura |
+| :---: | :---:  |
+| 0.1   | 1.3    |
+| 0.1   | 1.6    |
+| 0.5   | 0.4    |
+| ...   | ...    |
 
 **209 filas**
 
