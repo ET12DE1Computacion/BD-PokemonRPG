@@ -52,12 +52,12 @@
 <details>
     <summary>Salida</summary>
 
-| nombre    | cantidad |
-| :---:     | :---:    |
-| Poké Ball | 5        |
-| ...       | ...      |
+| nombre         | cantidad |
+| :---:          | :---:    |
+| Poké Ball      | 5        |
+| Piedra agua    | 1        |
 
-**1 fila**
+**2 filas**
 
 </details>
 
