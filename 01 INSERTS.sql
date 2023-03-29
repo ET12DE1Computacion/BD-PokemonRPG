@@ -2,7 +2,7 @@
 	Script Desarrollado por alumnos de Computación de ET12 "Libertador Gral. José de San Martín" https://et12.edu.ar
     Especies 230 */
 SET NAMES utf8;
-USE PokemonRPG;
+USE bd_PokemonRPG;
 SET FOREIGN_KEY_CHECKS=0;
 	TRUNCATE TABLE Entrenador;
 	TRUNCATE TABLE Tipo;
@@ -13,7 +13,7 @@ SET FOREIGN_KEY_CHECKS=0;
 	TRUNCATE TABLE Pokemon;
 SET FOREIGN_KEY_CHECKS=1;
 START TRANSACTION;
-    USE PokemonRPG;    
+    USE bd_PokemonRPG;    
     SELECT 'INSERTS en Tipo' AS 'INSERT';
     INSERT INTO Tipo(idTipo, tipo)
         VALUES      (1, 'Acero'),
