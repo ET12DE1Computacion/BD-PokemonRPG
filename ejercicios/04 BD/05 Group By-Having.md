@@ -1,6 +1,6 @@
 # TP Pokemon - Group By y Having
 
-1) Mostrar `nombre`  de la especie y pokemons capturados (JOIN con Pokemon) de la misma si la cantidad es mayor o igual a `2`. Ordenar por cantidad de mayor a menor y luego por nombre de mayor a menor.
+1) Mostrar `nombre`  de la especie y **cantidad de pokemons** capturados (JOIN con Pokemon) de la misma si la cantidad es mayor o igual a `2`. Ordenar por cantidad de mayor a menor y luego por nombre de mayor a menor.
 
 <details>
     <summary>Salida</summary>
