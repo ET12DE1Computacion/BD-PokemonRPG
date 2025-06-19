@@ -74,3 +74,18 @@ CREATE TABLE Pokemon(
 	CONSTRAINT FK_Pokemon_EntrenadorOriginal FOREIGN KEY (idEntrenadorOriginal) REFERENCES Entrenador (idEntrenador) ON DELETE Restrict ON UPDATE Restrict,
 	CONSTRAINT FK_Pokemon_Especie FOREIGN KEY (idEspecie) REFERENCES Especie (idEspecie) ON DELETE Restrict ON UPDATE Restrict
 );
+
+DELIMITER $$
+CREATE PROCEDURE VaciarTablas()
+BEGIN
+	START TRANSACTION;
+		DELETE FROM	Mochila;
+		DELETE FROM	Objeto;
+		DELETE FROM	Pokemon;
+		DELETE FROM	Pokedex;
+		DELETE FROM	Especie;
+		DELETE FROM	Entrenador;
+		DELETE FROM	Tipo;
+	COMMIT;
+END $$
+DELIMITER ;

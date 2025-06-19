@@ -34,7 +34,7 @@
 
 </details>
 
-3) Mostrar peso y altura de las especies, sin repeticiones de la tupla peso y altura. Ordenar por peso y altura de menor a mayor.
+3) Mostrar el peso de las especies sin repeticiones.
 
 <details>
     <summary>Salida</summary>
