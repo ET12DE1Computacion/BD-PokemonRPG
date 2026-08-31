@@ -18,6 +18,12 @@ CREATE TABLE Tipo(
 	CONSTRAINT UQ_Tipo_tipo UNIQUE (tipo ASC)
 );
 
+CREATE VIEW vTipo AS
+	SELECT	idTipo AS Id,
+			tipo AS Nombre
+	FROM	Tipo
+	ORDER BY tipo ASC;
+
 CREATE TABLE Especie(
 	idEspecie SMALLINT UNSIGNED NOT NULL,
 	idTipo TINYINT NOT NULL,
@@ -31,6 +37,25 @@ CREATE TABLE Especie(
 	CONSTRAINT FK_Especie_Tip02 FOREIGN KEY (idTipo2) REFERENCES Tipo (idTipo) ON DELETE Restrict ON UPDATE Restrict,
 	CONSTRAINT FK_Especie_Tipo FOREIGN KEY (idTipo) REFERENCES Tipo (idTipo) ON DELETE Restrict ON UPDATE Restrict
 );
+
+SELECT 'Creando Vista' Estado;
+CREATE VIEW vListadoEspecie AS
+	SELECT 
+		-- Propiedades de Especie
+		e.idEspecie AS Id,
+		e.nombre AS Nombre,
+		e.altura AS Altura,
+		e.peso AS Peso,
+		e.probabilidadH AS ProbabilidadHembra,                
+		-- Propiedades de Tipo
+		t.idTipo AS tId,
+		t.tipo AS tNombre,                
+		-- Propiedades de Tipo 2
+		t2.idTipo AS t2Id,
+		t2.tipo AS t2Nombre
+	FROM Especie e
+	INNER JOIN Tipo t USING (idTipo)
+	LEFT JOIN Tipo t2 ON e.idTipo2 = t2.idTipo;
 
 CREATE TABLE Objeto(
 	idObjeto SMALLINT NOT NULL AUTO_INCREMENT,
@@ -87,5 +112,31 @@ BEGIN
 		DELETE FROM	Entrenador;
 		DELETE FROM	Tipo;
 	COMMIT;
+END $$
+
+CREATE PROCEDURE AltaObjeto(OUT	unId SMALLINT, unNombre VARCHAR(45),
+							unPrecioVenta SMALLINT UNSIGNED, unPrecioCompra SMALLINT UNSIGNED)
+BEGIN
+	INSERT INTO Objeto (nombre, precioVenta, precioCompra)
+		VALUES	(unNombre, unPrecioVenta, unPrecioCompra);
+	SET unId = LAST_INSERT_ID();
+END $$
+
+CREATE PROCEDURE AltaEntrenador(OUT unId SMALLINT, unNombre VARCHAR(45), unMonto MEDIUMINT UNSIGNED)
+BEGIN
+	INSERT INTO Entrenador (nombre, dinero)
+		VALUE (unNombre, unMonto);
+	SET unId = LAST_INSERT_ID();
+END $$
+CREATE PROCEDURE MochilaDe(unIdEntrenador SMALLINT)
+BEGIN
+	SELECT	M.idObjeto Id,
+			nombre,
+			precioVenta Venta,
+			precioCompra Compra,
+			cantidad
+	FROM	Mochila M
+	JOIN	Objeto USING (idObjeto)
+	WHERE	idEntrenador = unIdEntrenador;
 END $$
 DELIMITER ;

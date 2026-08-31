@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Biblio.ConDapper/Biblio.ConDapper.csproj" />
+  <Project Path="Biblio/Biblio.csproj" />
+  <Project Path="TestDapper/TestDapper.csproj" />
+</Solution>
