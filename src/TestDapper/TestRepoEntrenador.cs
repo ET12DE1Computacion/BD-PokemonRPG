@@ -24,10 +24,11 @@ public class TestRepoEntrenador : TestRepo
     }
 
     [Fact]
-    public void TestName()
+    public void TraerMochila()
     {
         var mochiLuchoxx87 = _repo.TraerMochila(3);
         Assert.NotEmpty(mochiLuchoxx87);
+        Assert.Contains(mochiLuchoxx87, o=> o.Key.Nombre=="Poké Ball" && o.Value == 6);
     }
 
     [Fact]
